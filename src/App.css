@@ -1,0 +1,102 @@
+.App{
+    background: #E9F1FA;
+    color: #FFFFFF;
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    flex: 1;
+    overflow: hidden;
+}
+.app_container{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    overflow: auto;
+}
+.header_container{
+    padding: 10px;
+    background: #00ABE4;
+}
+.main_input_container{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+
+}
+.choices_container,
+.global_container .choices_container{
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    font-size: 18px;
+    color: #00215E;
+}
+.input_container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.form_container{
+    display: flex;
+    gap: 10px;
+    color: #00215E;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form_container input{
+    padding: 4px 6px;
+    font-size: 14px;
+    border-radius: 6px;
+    border: 1px solid #2C4E80;
+}
+
+.value_container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-end;
+}
+
+button{
+    padding: 10px;
+    border: 1px solid #00ABE4;
+    border-radius: 6px;
+    font-size: 14px;
+    background: #00ABE4;
+    color: #FFFFFF;
+}
+
+.output_container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    color: #00215E;
+    font-size: 18px;
+    gap: 10px;
+}
+
+.matrix_container{
+    display: flex;
+    gap: 10px;
+}
+
+@media only screen and (max-width: 750px) {
+   .form_container{
+    flex-direction: column;
+   }
+   .value_container{
+    align-items: flex-start;
+   }
+  }
